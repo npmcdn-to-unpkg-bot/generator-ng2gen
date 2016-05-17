@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ExcludeCompiledFiles" pattern="!file:src//*js&amp;&amp;!file:src//*js.map||file:src/app/content/**" />
+</component>

@@ -1,0 +1,10 @@
+h2 { color: #444; font-weight: lighter; }
+body { margin: 2em; }
+body, input[text], button { color: #888; font-family: Cambria, Georgia; }
+button {padding: 0.2em; font-size: 14px}
+
+
+div {border: 5px solid #EDF3F3; border-radius: 1em; text-align: center}
+span {font-size: 10px;display: inline-block}
+.inner {padding: 5px; margin: 5px}
+.outer {width: 400px}

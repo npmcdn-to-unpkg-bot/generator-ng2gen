@@ -1,0 +1,7 @@
+{
+  "port": 9090,
+  "browser": "chrome",
+  "injectChanges" : true,
+  "files" : ["./**/*.{.html, htm, css, js, ts}","*.html"],
+  "server" : { "baseDir":"./"}
+}
