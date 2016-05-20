@@ -30,10 +30,6 @@ gulp.task(settings.tasks.setProduction, () => {
   return process.env.ENV = settings.environments.prd;
 });
 
-gulp.task(settings.tasks.setMultipleBuilds, () => {
-  return process.env.MULTIPLE_ENV = true;
-});
-
 gulp.task(settings.tasks.bundleCss, () => {
   gulp.src(settings.cssSource).pipe(concat(settings.dist.cssBundle)).pipe(gulp.dest(settings.dist.cssDestination.replace('@ENV', process.env.ENV)));
 });
@@ -160,7 +156,7 @@ gulp.task(settings.tasks.buildProduction, [settings.tasks.clean, settings.tasks.
 });
 
 
-gulp.task(settings.tasks.build, [settings.tasks.clean, settings.tasks.setMultipleBuilds],  () => {
+gulp.task(settings.tasks.build, [settings.tasks.clean],  () => {
 
   runSequence(
     settings.tasks.setDevelopment, settings.tasks.bundleApp,
