@@ -1,8 +1,3 @@
-import settings from './gulp.settings';
-
-var devMode = process.env.ENV && process.env.ENV == settings.environments.dev && (!process.env.MULTIPLE_ENV)? true : false;
-var browsers = [devMode ? 'Chrome' : 'PhantomJS'];
-
 module.exports = function(config) {
   config.set({
 
@@ -66,6 +61,6 @@ module.exports = function(config) {
       logLevel: config.LOG_INFO,
       autoWatch: true,
       browsers: browsers,
-      singleRun: false
+      singleRun: ['PhantomJS']
   })
 }
