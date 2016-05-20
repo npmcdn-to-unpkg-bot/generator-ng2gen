@@ -46,7 +46,6 @@ var settings = {
     setQa: 'set-qa-env',
     setStaging: 'set-stg-env',
     setProduction: 'set-prd-env',
-    setMultipleBuilds: 'set-multiple-builds',
     clean: 'clean',
     watchCss: 'watch-css',
     watchAppJavascript: 'watch-app-javascript',
